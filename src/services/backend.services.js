@@ -84,6 +84,26 @@ const createBlog = async (blogInput) => {
   }
 };
 
+const sendMessage = async (messageInput) => {
+  const url = `${baseUrl}/messages/send`;
+  const config = {
+    method: "POST",
+    url,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
+    },
+    data: messageInput,
+  };
+
+  try {
+    const response = await axios.request(config);
+    return response.status;
+  } catch (e) {
+    throw new Error(e.response.data.message);
+  }
+};
+
 const updateBlog = async (blogId, blogInput) => {
   const url = `${baseUrl}/blogs/update/${blogId}`;
 
@@ -127,4 +147,12 @@ const fetchBlogs = async (query) => {
   }
 };
 
-export { createAccount, login, logout, createBlog, updateBlog, fetchBlogs };
+export {
+  createAccount,
+  login,
+  logout,
+  createBlog,
+  updateBlog,
+  fetchBlogs,
+  sendMessage,
+};
