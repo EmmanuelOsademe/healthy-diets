@@ -94,7 +94,6 @@ const Navbar = () => {
           Logout
         </button>
       </div>
-      {/* <img src={Profileicon} className="pl-0 w-16 " alt="profile_icon" /> */}
     </div>
   );
 };
