@@ -84,9 +84,6 @@ const Navbar = () => {
             }`}
           />
         ))}
-        <a href="#footer" className="px-2 py-1 rounded-md text-black">
-          Contact
-        </a>
         <button
           type="button"
           className={`px-2 py-1 rounded-md bg-secondaryPink ${
@@ -108,9 +105,10 @@ const navItems = [
   { title: "Blog", link: "/blogs", access: "user" },
   { title: "Our Services", link: "/services", access: "user" },
   { title: "Service", link: "/service", access: "user" },
-  { title: "About Us", link: "/about-us", access: "user" },
+  { title: "About us", link: "/about-us", access: "user" },
   { title: "Create Blog", link: "/create-blog", access: "admin" },
   { title: "Sign up", link: "/sign-up", access: "user" },
+  { title: "Contact", link: "/contact-us", access: "user" },
 ];
 
 const NavItem = ({ item, userData, index, handleClick, selected }) => {

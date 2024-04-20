@@ -1,11 +1,11 @@
 import "../index.css";
 import Berriesicon from "../assets/images/berriesicon.png";
-import telephone from "../assets/images/Images/telephone-img.png"
-import cutlery from "../assets/images/Images/cutlery-img.png"
+import telephone from "../assets/images/Images/telephone-img.png";
+import cutlery from "../assets/images/Images/cutlery-img.png";
 
 function Services() {
   return (
-    <div className="mb-32 border">
+    <div className="mb-16 pb-4 mt-4 border">
       <div className="w-full bg-primaryGreen mb-2">
         <div className="max-w-4 ">
           <img
@@ -26,10 +26,7 @@ function Services() {
       </div>
 
       <div className="bg-secondaryPink flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] pl-10 mt-10 ml-10">
-        <img
-         src={telephone}
-          className="max-w-xs" 
-          alt="" />
+        <img src={telephone} className="max-w-xs" alt="" />
         <h1 className="mt-16 text-3xl capitalize font-extrabold  font-poppins">
           Virtual <br /> Consultation
         </h1>
@@ -44,10 +41,7 @@ function Services() {
       </div>
 
       <div className="bg-secondaryPink flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] pl-10 mt-10 ml-10">
-        <img 
-        src={cutlery} 
-        className="max-w-xs max- mx-2" 
-        alt="" />
+        <img src={cutlery} className="max-w-xs max- mx-2" alt="" />
 
         <h1 className="mt-16 text-3xl capitalize font-extrabold  font-poppins ">
           Curated <br />
@@ -61,7 +55,6 @@ function Services() {
           health and wellness goals.
           <h5 className="pt-5 pr-64 font-bold">View Plan</h5>
         </p>
-        
       </div>
     </div>
   );
