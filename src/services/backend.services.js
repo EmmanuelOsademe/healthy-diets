@@ -57,7 +57,6 @@ const logout = async () => {
 
   try {
     const response = await axios.request(config);
-    console.log(response);
     return response.status;
   } catch (e) {
     throw new Error(e.response.data.message);
@@ -106,7 +105,7 @@ const updateBlog = async (blogId, blogInput) => {
   }
 };
 
-const fetchBlogs = async () => {
+const fetchBlogs = async (query) => {
   const url = `${baseUrl}/blogs`;
 
   const config = {
@@ -116,13 +115,14 @@ const fetchBlogs = async () => {
       "Content-Type": "application/json",
       Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
     },
+    params: { ...query },
   };
 
   try {
     const response = await axios.request(config);
-    console.log(response);
-    return response;
+    return response.data;
   } catch (e) {
+    console.log(e);
     throw new Error(e.response.data.message);
   }
 };

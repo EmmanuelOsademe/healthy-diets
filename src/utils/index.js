@@ -88,7 +88,7 @@ export const convertStringToDate = (date) => {
     appendage = "th";
   }
 
-  return `${day} of ${monthStr}, ${year}`;
+  return `${day}${appendage} of ${monthStr}, ${year}`;
 };
 
 export { validatePassword };
