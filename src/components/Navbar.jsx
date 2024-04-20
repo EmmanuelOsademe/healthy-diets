@@ -86,7 +86,7 @@ const Navbar = () => {
         ))}
         <button
           type="button"
-          className={`px-2 py-1 rounded-md bg-secondaryPink ${
+          className={`px-2 py-1 rounded-md bg-gray-100 ${
             userData ? "flex" : "hidden"
           }`}
           onClick={handleLogout}
@@ -102,11 +102,11 @@ const Navbar = () => {
 export default Navbar;
 
 const navItems = [
-  { title: "Blog", link: "/blogs", access: "user" },
+  { title: "Blogs", link: "/blogs", access: "user" },
   { title: "Our Services", link: "/services", access: "user" },
   { title: "Service", link: "/service", access: "user" },
   { title: "About us", link: "/about-us", access: "user" },
-  { title: "Create Blog", link: "/create-blog", access: "admin" },
+  { title: "Create blog", link: "/create-blog", access: "admin" },
   { title: "Sign up", link: "/sign-up", access: "user" },
   { title: "Contact", link: "/contact-us", access: "user" },
 ];
@@ -114,8 +114,8 @@ const navItems = [
 const NavItem = ({ item, userData, index, handleClick, selected }) => {
   const showItem =
     (item.access === "admin" && userData?.userType === "admin") ||
-    (item.title === "Sign Up" && userData === null) ||
-    (item.title !== "Sign Up" && item.access === "user");
+    (item.title === "Sign up" && userData === null) ||
+    (item.title !== "Sign up" && item.access === "user");
 
   return (
     <Link
