@@ -57,7 +57,6 @@ const logout = async () => {
 
   try {
     const response = await axios.request(config);
-    console.log(response);
     return response.status;
   } catch (e) {
     throw new Error(e.response.data.message);
