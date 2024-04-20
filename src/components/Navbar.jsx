@@ -107,7 +107,8 @@ export default Navbar;
 const navItems = [
   { title: "Blog", link: "/blogs", access: "user" },
   { title: "Our Services", link: "/services", access: "user" },
-  { title: "About us", link: "/about-us", access: "user" },
+  { title: "Service", link: "/service", access: "user" },
+  { title: "About Us", link: "/about-us", access: "user" },
   { title: "Create Blog", link: "/create-blog", access: "admin" },
   { title: "Sign up", link: "/sign-up", access: "user" },
 ];
