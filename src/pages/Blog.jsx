@@ -33,8 +33,6 @@ const BlogPage = () => {
     getBlogs();
   }, []);
 
-  console.log(trendingBlogs);
-
   return (
     <>
       <div className="w-full bg-primaryGreen mb-2">
