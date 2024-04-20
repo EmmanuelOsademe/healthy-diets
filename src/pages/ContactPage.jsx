@@ -1,10 +1,16 @@
 // import NavbarSection from "../Navbar";
+import backgroundimg from "../assets/images/Images/veggies-img.png";
 
 const ContactPage = () => {
     return (
         <>
         {/* <NavbarSection /> */}
-        <div className="border border-slate-200 rounded-1xl pt-10 pb-10 w-[1160px]" >
+
+        <img src={backgroundimg} className="relative" alt="" />
+
+        <div className=" absolute border border-slate-200 rounded-1xl top-9 pt-48 pb-10 w-[1220px]" >
+
+          
 
         <button className="pr-2 text-3xl w-[300px] pt-16 pb-9 bg-white border border-white rounded-3xl font-extrabold ">
              Get In Touch

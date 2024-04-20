@@ -2,14 +2,14 @@ import "../index.css";
 
 function ServicePage() {
   return (
-    <section className="flex justify-center space-x4 gap-5 bg-secondaryPink pt-20 pb-16">
+    <section className="flex justify-center space-x4 gap-5 bg-secondaryPink pt-20 mb-20">
       <div className="bg-white p-10 rounded-2xl  ">
         <h1 className="text-2xl text-extrabold pb-3">Weekly</h1>
         <p className="pb-10">Access to a Dietitian for 1 week</p>
         <p className="text-extrabold text-2xl pb-4 font-poppins capitalize">
           NGN 5,000{" "}
         </p>
-        <span>per week</span>
+        <span>per week</span> 
         <p className="text-bold">What’s included</p>
         <p className="pb-7">
           3 virtual meetings or phone calls <br />
@@ -45,7 +45,7 @@ function ServicePage() {
         </button>
       </div>
 
-      <div className="bg-white rounded-2xl pt-9">
+      <div className="bg-white rounded-2xl pb-10 pt-9">
         <h1 className="text-2xl text-extrabold pb-3">Annually</h1>
         <p className="pb-10">Access to a Dietitian for 12 months</p>
         <p className="text-extrabold text-2xl pb-4 font-poppins capitalize">

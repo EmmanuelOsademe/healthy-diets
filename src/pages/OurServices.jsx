@@ -1,5 +1,7 @@
 import "../index.css";
 import Berriesicon from "../assets/images/berriesicon.png";
+import telephone from "../assets/images/Images/telephone-img.png"
+import cutlery from "../assets/images/Images/cutlery-img.png"
 
 function Services() {
   return (
@@ -24,7 +26,10 @@ function Services() {
       </div>
 
       <div className="bg-secondaryPink flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] pl-10 mt-10 ml-10">
-        <img src="" alt="" />
+        <img
+         src={telephone}
+          className="max-w-xs" 
+          alt="" />
         <h1 className="mt-16 text-3xl capitalize font-extrabold  font-poppins">
           Virtual <br /> Consultation
         </h1>
@@ -39,7 +44,10 @@ function Services() {
       </div>
 
       <div className="bg-secondaryPink flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] pl-10 mt-10 ml-10">
-        <img src="" alt="" />
+        <img 
+        src={cutlery} 
+        className="max-w-xs max- mx-2" 
+        alt="" />
 
         <h1 className="mt-16 text-3xl capitalize font-extrabold  font-poppins ">
           Curated <br />
