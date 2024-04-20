@@ -8,8 +8,6 @@ import dieticianimg from "../assets/images/Dietician-img.png";
 // import veggie from "../assets/images/Images/veggie-img.png";
 
 const AboutusPage = () => {
-   
-
   return (
     <>
       {/* <NavbarSection /> */}
@@ -38,14 +36,14 @@ const AboutusPage = () => {
               </p>
             </div>
 
-            <button className="bg-primaryOrange  w-52 rounded-2xl ">
+            <button className="bg-primaryOrange pt-2 pb-2 text-white w-52 rounded-2xl ">
               Our Services
             </button>
           </div>
         </div>
 
         <div>
-          <button className="pt-5 mt-9 border border-slate-400 mb-5 bg-slate-100 w-96 font-extrabold text-3xl">
+          <button className="pt-5 mt-9 pb-5 border border-slate-400  bg-slate-100 w-96 font-extrabold text-3xl">
             Know your <span className="text-primaryOrange">Dietician</span>
           </button>
 
@@ -56,30 +54,31 @@ const AboutusPage = () => {
                className=" p-9" 
                alt="" />  */}
 
-            {/* <img src={Qicon} alt="quotesicon" className="w-132 pl-1" /> */}
-            <h4 className="bg-white pb-16 text-2xl pr-10 mr-20  pt-10">
-            
-              I believe that every person is unique, and so is their
-              relationship with food. That's why I offer personalised
-               nutrition
-              plans{" "}
-            </h4>
-            {/* <img src={Qicon2} alt="quotesicon" className="w-132 pl-1" /> */}
+              {/* <img src={Qicon} alt="quotesicon" className="w-132 pl-1" /> */}
+              <h4 className="bg-white pb-16 text-2xl pr-10 mr-20  pt-10">
+                I believe that every person is unique, and so is their
+                relationship with food. That's why I offer personalised
+                nutrition plans{" "}
+              </h4>
+              {/* <img src={Qicon2} alt="quotesicon" className="w-132 pl-1" /> */}
 
-            <p className="pt-5 ml-10  pr-20 border w-[600px] border-slate-400 text-lg">
-              Pascaline Ukwueze is a registered dietician with over five years
-              of experience in the field of dietetics. She earned her B.Sc. in
-              nutrition and dietetics from the University of Nigeria, Nsukka,
-              and has since worked as a clinical dietician in two hospitals.
-              She’s passionate about helping people to stay healthy while living
-              their best lives through 
-              nutrition education, support, and
-              encouragement.
-            </p>
+              <p className="pt-5 ml-10  pr-20 border w-[600px] border-slate-400 text-lg">
+                Pascaline Ukwueze is a registered dietician with over five years
+                of experience in the field of dietetics. She earned her B.Sc. in
+                nutrition and dietetics from the University of Nigeria, Nsukka,
+                and has since worked as a clinical dietician in two hospitals.
+                She’s passionate about helping people to stay healthy while
+                living their best lives through nutrition education, support,
+                and encouragement.
+              </p>
             </div>
 
             <div>
-            <img src={dieticianimg} alt="" className="w-[300px] pr-12 pt-32" />
+              <img
+                src={dieticianimg}
+                alt=""
+                className="w-[300px] pr-12 pt-32"
+              />
             </div>
           </div>
         </div>
