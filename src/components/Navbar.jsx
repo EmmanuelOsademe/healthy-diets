@@ -79,8 +79,8 @@ const Navbar = () => {
             handleClick={handleClick}
             selected={`${
               selectedIndex === index
-                ? "bg-primaryOrange text-white"
-                : "bg-secondaryPink text-black"
+                ? "text-black underline underline-offset-4"
+                : "text-black"
             }`}
           />
         ))}
