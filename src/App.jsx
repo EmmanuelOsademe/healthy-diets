@@ -16,10 +16,7 @@ import ContactPage from "./pages/ContactPage";
 
 import SingleBlogPage from "./pages/SingleBlog";
 
-
-
 import Footer from "./components/Footer";
-
 
 const App = () => {
   return (
@@ -37,7 +34,6 @@ const App = () => {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/single-blog" element={<SingleBlogPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
-
       </Routes>
       <Footer />
       <ToastContainer
