@@ -56,6 +56,8 @@ const Navbar = () => {
         isLoading: false,
         autoClose: 5000,
       });
+    } finally {
+      setSelectedIndex(-1);
     }
   };
 
