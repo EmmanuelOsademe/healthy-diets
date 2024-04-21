@@ -84,6 +84,12 @@ const Navbar = () => {
             }`}
           />
         ))}
+        {userData !== null && userData.fullName && (
+          <Link to="/user-page" className="p-2 rounded-full bg-gray-100">
+            {userData.fullName.split(" ")[0][0]}
+            {userData.fullName.split(" ")[1][0]}
+          </Link>
+        )}
         <button
           type="button"
           className={`px-2 py-1 rounded-md bg-gray-100 ${
