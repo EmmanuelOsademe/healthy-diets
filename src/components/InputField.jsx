@@ -12,6 +12,7 @@ const InputField = ({
   value,
   isPassword,
   inputType = "text",
+  width = "w-[310px]"
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -29,10 +30,10 @@ const InputField = ({
       <label className="text-left font-semibold  text-lg md:text-[20px] mt-6">
         {label}
       </label>
-      <div className="relative w-[310px]">
+      <div className={`relative ${width}`}>
         <input
           required={required}
-          className="w-[310px] border rounded-xl md:rounded-md border-slate-600 md:text-black h-12 text-xl pl-3"
+          className="w-full border rounded-xl md:rounded-md border-slate-600 md:text-black h-12 text-xl pl-3"
           type={!isPassword ? inputType : showPassword ? "text" : "password"}
           name={name}
           placeholder={placeholder}

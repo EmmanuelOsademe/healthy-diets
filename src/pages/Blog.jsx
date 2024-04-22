@@ -298,13 +298,14 @@ const BlogPage = () => {
           <button className="bg-primaryOrange text-white w-64 h-12 rounded-full">
             Subscribe
           </button>
+          
         </div>
       </div>
 
       <div className="bg-secondaryPink relative z-10">
         <div className="grid grid-cols-4 pt-12 pl-12 pr-8">
           <img src={Logo} className="w-sm col-span-2" alt="healthydiet_logo" />
-
+          
           <div id="contact_and_others" className="grid col-span-2 text-left">
             <div id="firstlist" className="col-start-3 col-end-4 pr-24 ">
               <ul className="text-xl font-bold space-y-4">

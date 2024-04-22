@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import CreateBlog from "./pages/CreateBlog";
 import HomePage from "./pages/Home";
+import PaymentPage from "./pages/Payment";
 
 import SingleBlogPage from "./pages/SingleBlog";
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/create-blog" element={<CreateBlog />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/single-blog" element={<SingleBlogPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
 
       </Routes>
       <Footer />
