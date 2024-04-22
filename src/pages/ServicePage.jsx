@@ -6,38 +6,14 @@ import cutlery from "../assets/images/Images/cutlery-img.png";
 
 function ServicePage() {
   return (
-
-    
-    <section className="bg-secondaryPink ml-12 mr-12  rounded-3xl">
-
-<div className="flex flex-row justify-center mb-12  mt-14 gap-9 ">
-        <img
-         src={telephone}
-          className=" pt-12" 
-          alt="" />
-        <h1 className="mt-20 text-5xl capitalize font-bold  font-poppins">
-          Virtual <br /> Consultation
-        </h1>
-        <p className="mt-20 text-lg">
-          Discover the convenience of virtual <br />
-          consultations with our expert dietitian. Get <br />
-          personalized nutrition advice, meal plans, and <br />
-          lifestyle recommendations from the comfort of <br />
-          your home.
-          <h5 className="pt-5 pr-64 font-bold">View Plan</h5>
-        </p>
-      </div>
-     
-     
-      <div className="flex justify-center  gap-5  ">
-      <div className="bg-white mb-72 rounded-2xl  ">
-        <h1 className="text-2xl font-extrabold pt-8">Weekly</h1>
-        <p className="pb-4 pt-4">Access to a Dietitian for 1 week</p>
-        <hr className="h-px my-8  bg-slate-400 border-0 " />
-        <p className="font-extrabold text-3xl pb-4 font-poppins capitalize">
+    <section className="flex justify-center mt-4 gap-5 bg-secondaryPink py-8 px-4 mb-20">
+      <div className="bg-white p-10 rounded-2xl  ">
+        <h1 className="text-2xl text-extrabold pb-3">Weekly</h1>
+        <p className="pb-10">Access to a Dietitian for 1 week</p>
+        <p className="text-extrabold text-2xl pb-4 font-poppins capitalize">
           NGN 5,000{" "}
         </p>
-        <span>per week</span> 
+        <span>per week</span>
         <p className="text-bold">What’s included</p>
         {/* <p className="pb-7"> */}
           

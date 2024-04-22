@@ -10,9 +10,7 @@ import dieticianimg from "../assets/images/Dietician-img.png";
 const AboutusPage = () => {
   return (
     <>
-      {/* <NavbarSection /> */}
-
-      <div className="">
+      <div className="mt-4">
         <div className="relative">
           <div>
             <img className=" w-lvw h-lvh " src={aboutbg} alt="" />
@@ -57,7 +55,7 @@ const AboutusPage = () => {
               {/* <img src={Qicon} alt="quotesicon" className="w-132 pl-1" /> */}
               <h4 className="bg-white pb-16 text-2xl pr-10 mr-20  pt-10">
                 I believe that every person is unique, and so is their
-                relationship with food. That's why I offer personalised
+                relationship with food. That&apos; why I offer personalised
                 nutrition plans{" "}
               </h4>
               {/* <img src={Qicon2} alt="quotesicon" className="w-132 pl-1" /> */}

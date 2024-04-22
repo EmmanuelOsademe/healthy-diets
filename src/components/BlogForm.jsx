@@ -5,12 +5,14 @@ import { userActions } from "../context/slices/user.slice";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { createBlog, updateBlog } from "../services/backend.services";
+import TextEditor from "./TextEditor";
 
 const BlogForm = ({ blog, type }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { setUserData } = userActions;
   const { userData } = useSelector((states) => states.userStates);
+  const [editorContent, setEditorContent] = useState("Enter details here");
 
   useEffect(() => {
     if (!userData) {
@@ -50,7 +52,7 @@ const BlogForm = ({ blog, type }) => {
       title: blogDetail.title,
       imageUrl: blogDetail.imageUrl,
       overview: blogDetail.overview,
-      description: blogDetail.description,
+      description: editorContent,
     };
 
     const toastId = toast.loading(type === "create" ? "Creating" : "Updating");
@@ -149,21 +151,15 @@ const BlogForm = ({ blog, type }) => {
         />
       </div>
 
-      <div className="flex flex-col gap-1 w-[460px]">
+      <div className="flex flex-col mb-1 w-[460px]">
         <label className="text-left font-semibold  text-lg md:text-[20px] mt-6">
           Blog Description
         </label>
-        <textarea
-          required
-          name="description"
-          cols={1}
-          rows={5}
-          className="border rounded-xl md:rounded-md border-slate-600 md:text-black text-xl pl-3"
-          placeholder="Enter blog overview"
-          value={blogDetail.description}
-          onChange={handleChange}
-        />
       </div>
+      <TextEditor
+        value={blogDetail.description}
+        handleChange={(content) => setEditorContent(content)}
+      />
       <button
         type="submit"
         className="Login bg-primaryOrange items-center justify-center w-[310px] h-14 flex mx-auto rounded-xl text-white font-bold text-xl mt-3"

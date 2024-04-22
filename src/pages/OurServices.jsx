@@ -5,8 +5,8 @@ import cutlery from "../assets/images/Images/cutlery-img.png";
 
 function Services() {
   return (
-    <div className="mb-2 border">
-      <div className="w-full bg-primaryGreen">
+    <div className="mb-32 border">
+      <div className="w-full bg-primaryGreen mb-2">
         <div className="max-w-4 ">
           <img
             src={Berriesicon}
@@ -25,12 +25,9 @@ function Services() {
         </p>
       </div>
 
-      <div className="bg-secondaryPink gap-12 flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] ml-14 mt-14 ">
-        <img
-         src={telephone}
-          className="max-w-xs  h-48 pt-10" 
-          alt="" />
-        <h1 className="mt-16 text-5xl  capitalize font-bold  font-poppins">
+      <div className="bg-secondaryPink flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] pl-10 mt-10 ml-10">
+        <img src={telephone} className="max-w-xs" alt="" />
+        <h1 className="mt-16 text-3xl capitalize font-extrabold  font-poppins">
           Virtual <br /> Consultation
         </h1>
         <p className="m-10 text-lg ">
@@ -43,10 +40,10 @@ function Services() {
         </p>
       </div>
 
-      <div className="bg-secondaryPink gap-20 flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] mb-20 mt-12 ml-14">
+      <div className="bg-secondaryPink flex flex-row justify-center pb-5 pt-5 border rounded-2xl w-[1100px] pl-10 mt-10 ml-10">
         <img 
         src={cutlery} 
-        className="max-w-xs h-48 pt-16" 
+        className="max-w-xs max- mx-2" 
         alt="" />
 
         <h1 className="mt-16 text-5xl capitalize font-bold  font-poppins ">
@@ -61,7 +58,6 @@ function Services() {
           health and wellness goals.
           <h5 className="pt-5 pr-64 font-bold">View Plan</h5>
         </p>
-        
       </div>
     </div>
   );

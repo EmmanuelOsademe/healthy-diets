@@ -56,6 +56,8 @@ const Navbar = () => {
         isLoading: false,
         autoClose: 5000,
       });
+    } finally {
+      setSelectedIndex(-1);
     }
   };
 
@@ -79,14 +81,20 @@ const Navbar = () => {
             handleClick={handleClick}
             selected={`${
               selectedIndex === index
-                ? "bg-primaryOrange text-white"
-                : "bg-secondaryPink text-black"
+                ? "text-black underline underline-offset-4"
+                : "text-black"
             }`}
           />
         ))}
+        {userData !== null && userData.fullName && (
+          <Link to="/user-page" className="p-2 rounded-full bg-gray-100">
+            {userData.fullName.split(" ")[0][0]}
+            {userData.fullName.split(" ")[1][0]}
+          </Link>
+        )}
         <button
           type="button"
-          className={`px-2 py-1 rounded-md bg-secondaryPink ${
+          className={`px-2 py-1 rounded-md bg-gray-100 ${
             userData ? "flex" : "hidden"
           }`}
           onClick={handleLogout}
@@ -94,7 +102,6 @@ const Navbar = () => {
           Logout
         </button>
       </div>
-      {/* <img src={Profileicon} className="pl-0 w-16 " alt="profile_icon" /> */}
     </div>
   );
 };
@@ -102,20 +109,20 @@ const Navbar = () => {
 export default Navbar;
 
 const navItems = [
-  { title: "About Us", link: "/about-us", access: "user" },
+  { title: "Blogs", link: "/blogs", access: "user" },
   { title: "Our Services", link: "/services", access: "user" },
   { title: "Service", link: "/service", access: "user" },
-  { title: "Contact", link: "/contact-us", access: "user" },
-  { title: "Blog", link: "/blogs", access: "user" },
+  { title: "About Us", link: "/about-us", access: "user" },
   { title: "Create Blog", link: "/create-blog", access: "admin" },
+  { title: "Contact", link: "/contact-us", access: "user" },
   { title: "Sign Up", link: "/sign-up", access: "user" },
 ];
 
 const NavItem = ({ item, userData, index, handleClick, selected }) => {
   const showItem =
     (item.access === "admin" && userData?.userType === "admin") ||
-    (item.title === "Sign Up" && userData === null) ||
-    (item.title !== "Sign Up" && item.access === "user");
+    (item.title === "Sign up" && userData === null) ||
+    (item.title !== "Sign up" && item.access === "user");
 
   return (
     <Link
