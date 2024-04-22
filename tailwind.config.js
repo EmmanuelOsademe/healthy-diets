@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/assets/image/checkmark.png")'
+      },
+
+
       fontFamily: {
         sans: ["DM Sans", "sans-serif"],
         lexend: ["Lexend", "sans-serif"],

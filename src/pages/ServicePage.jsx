@@ -3,6 +3,7 @@ import telephone from "../assets/images/Images/telephone-img.png";
 import cutlery from "../assets/images/Images/cutlery-img.png";
 
 
+
 function ServicePage() {
   return (
 
@@ -12,9 +13,9 @@ function ServicePage() {
 <div className="flex flex-row justify-center  mt-14 gap-9 ">
         <img
          src={telephone}
-          className="max-w-xs pr-48 pt-12" 
+          className=" pt-12" 
           alt="" />
-        <h1 className="mt-16 text-2xl capitalize font-extrabold  font-poppins">
+        <h1 className="mt-20 text-5xl capitalize font-bold  font-poppins">
           Virtual <br /> Consultation
         </h1>
         <p className="m-10 text-lg">
@@ -38,17 +39,16 @@ function ServicePage() {
         </p>
         <span>per week</span> 
         <p className="text-bold">What’s included</p>
-        <p className="pb-7">
-          <div>
-        <ul class="list-image-[assets(checkmark.png)] ...">
-  <li>5 cups chopped Porcini mushrooms</li>
-  
-</ul>
-</div>
-          3 virtual meetings or phone calls <br />
-          Unlimited access to a Dietitian via <br />
-          email Nutrition assessment, counselling <br /> and management{" "}
-        </p>
+        {/* <p className="pb-7"> */}
+          
+       
+
+         <ul className="list-image-checkmark ">
+         <li>3 virtual meetings or phone calls <br /></li>
+         <li>Unlimited access to a Dietitian via <br /></li>
+         <li>email Nutrition assessment, counselling <br /></li> and management{" "}
+         </ul>
+         {/* </p> */}
 
         <button className="bg-primaryOrange rounded-2xl text-bold  pl-7 pr-8 pt-3 pb-3">
           Select Plan
