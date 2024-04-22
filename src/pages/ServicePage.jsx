@@ -10,7 +10,7 @@ function ServicePage() {
     
     <section className="bg-secondaryPink ml-12 mr-12  rounded-3xl">
 
-<div className="flex flex-row justify-center  mt-14 gap-9 ">
+<div className="flex flex-row justify-center mb-12  mt-14 gap-9 ">
         <img
          src={telephone}
           className=" pt-12" 
@@ -18,7 +18,7 @@ function ServicePage() {
         <h1 className="mt-20 text-5xl capitalize font-bold  font-poppins">
           Virtual <br /> Consultation
         </h1>
-        <p className="m-10 text-lg">
+        <p className="mt-20 text-lg">
           Discover the convenience of virtual <br />
           consultations with our expert dietitian. Get <br />
           personalized nutrition advice, meal plans, and <br />
