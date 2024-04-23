@@ -8,14 +8,14 @@ function ServicePage() {
   return (
 
     
-    <section className="bg-secondaryPink ml-12 mr-12  rounded-3xl">
+    <section className="ml-12 mr-12 gap-7 rounded-3xl">
 
-<div className="flex flex-row justify-center pt-14 pb-16 mt-14 gap-9 ">
+<div className="bg-secondaryPink  flex flex-row justify-center pt-14  ">
         <img
          src={telephone}
           className=" pt-12" 
           alt="" />
-        <h1 className="mt-20 text-5xl capitalize font-bold  font-poppins">
+        <h1 className="mt-20 text-5xl capitalize font-bold placeholder-blue-100   font-poppins">
           Virtual <br /> Consultation
         </h1>
         <p className="m-10 pt-7 text-left text-lg">
@@ -29,7 +29,7 @@ function ServicePage() {
       </div>
      
      
-      <div className="flex justify-center  gap-5  ">
+      <div className="flex justify-center pb-20 pt-10 bg-secondaryPink gap-8  ">
       <div className="bg-white mb-72 rounded-2xl  ">
         <h1 className="text-2xl font-extrabold pt-8">Weekly</h1>
         <p className="pb-4 pt-4">Access to a Dietitian for 1 week</p>
@@ -40,15 +40,15 @@ function ServicePage() {
         <span>per week</span> 
         <p className="text-bold">What’s included</p>
         {/* <p className="pb-7"> */}
-         <ul className="list-image-[url(src/assets/images/checkmark.png)] ">
+         <ul className="list-image-[url(src/assets/images/checkmark.png)] pl-10 ">
          <li>3 virtual meetings or phone calls <br /></li>
          <li>Unlimited access to a Dietitian via <br /></li>
          <li>email Nutrition assessment, counselling <br /></li> and management{" "}
          </ul>
          {/* </p> */}
 
-        <button className="bg-primaryOrange rounded-2xl text-bold  pl-7 pr-8 pt-3 pb-3">
-          Select Plan
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white pl-7 pr-8 pt-3 pb-3">
+          Get Started
         </button>
       </div>
 
@@ -72,8 +72,8 @@ function ServicePage() {
           accountability
         </p>
 
-        <button className="bg-primaryOrange rounded-2xl text-bold  pl-7 pr-8 pt-3 pb-3 ">
-          Select Plan
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white pl-7 pr-8 pt-3 pb-3 ">
+          Get Started
         </button>
       </div>
 
@@ -85,54 +85,60 @@ function ServicePage() {
           NGN 60,000 <span className="">per week</span>
         </p>
         <p className="text-bold">What’s included</p>
-        <p className="pb-7">
-          12 virtual meetings or phone calls <br />
-          <p>
-            Unlimited access to a Dietitian via email <br />
-          </p>
-          <p>
+
+        <ul className="list-image-[url(src/assets/images/checkmark.png)] "></ul>
+          <li>12 virtual meetings or phone calls  </li>
+           <li> Unlimited access to a Dietitian via email </li>
+          
+          <li>
             {" "}
             Nutrition assessment, counselling <br />
             and management{" "}
-          </p>
-          <p>
+          </li>
+          <li>
             {" "}
             Support and follow-up from a <br /> Dietitian{" "}
-          </p>
-          <p>
+          </li>
+          <li>
             Access to a private community of <br />{" "}
-          </p>
-          <p>
+          </li>
+          <li>
             subscribers for support and <br />{" "}
-          </p>
-          accountability Webinar series on healthy <br /> food choices and lifestyle{" "}
-          <br />
-          Online classes that focus on nutrition for families
-        </p>
-        
+          </li>
+         <li>accountability Webinar series on healthy <br /> food choices and lifestyle{" "} </li>
+          
+          <li> Online classes that focus on nutrition for families </li>
 
-        <button className="bg-primaryOrange rounded-2xl text-bold  pl-8 pr-8 pt-3 pb-3">
-          Select Plan
+          
+          
+
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white   pl-8 pr-8 pt-3 pb-3">
+          Get Started
         </button>
         </div>
         </div>
-      
+       
+        
+        <h6 className="top-72">Close Plan</h6>
+
+        
 
 
 
 
-
-        <div className="bg-secondaryPink gap-16 flex flex-row justify-center pb-5 pt-20 border rounded-3xl mt-32 ">
+<section className="">
+        <div className="bg-secondaryPink gap-16 flex flex-row justify-center pb-10  border rounded-3xl mt-32 ">
         <img 
         src={cutlery} 
-        className="max-w-xs max- mx-2" 
+        className="max-w-xs h-48 pt-10" 
+        
         alt="" />
 
-        <h1 className="mt-16 text-3xl capitalize font-extrabold  font-poppins ">
+        <h1 className="mt-16 text-5xl capitalize font-extrabold  font-poppins ">
           Curated <br />
           Menu Plan
         </h1>
-        <p className="m-10">
+        <p className="m-10 text-lg text-left">
           Unlock the power of personalized nutrition with <br />
           a menu plan crafted by our Dietitian. Tailored to <br />
           your unique dietary needs and preferences, our <br />
@@ -140,15 +146,63 @@ function ServicePage() {
           health and wellness goals.
           
         </p>
+        </div>
+
+
+       <div className="flex justify-center bg-secondaryPink gap-8 pt-10 mb-10  ">
+      <div className="bg-white mb-72 rounded-2xl  ">
+        <h1 className="text-2xl font-extrabold pt-8">Weekly</h1>
+        <p className="pb-4 pt-4">Access to a Dietitian for 1 week</p>
+        <hr className="h-px my-8  bg-slate-400 border-0 " />
+        <p className="font-extrabold text-3xl pb-4 font-poppins capitalize">
+          NGN 5,00 0{" "}
+        </p>
+        <span>per week</span> 
+        <p className="text-bold">What’s included</p>
         
-      
+         <ul className="list-image-[url(src/assets/images/checkmark.png)] pl-10 ">
+         <li>3 virtual meetings or phone calls <br /></li>
+         <li >Unlimited access to a Dietitian via <br /></li>
+         <li>email Nutrition assessment, counselling <br /></li> and management{" "}
+         </ul>
+        
+
+        <button className="bg-primaryOrange rounded-2xl text-white text-bold  pl-7 pr-8 pt-3 pb-3">
+          Get Started
+        </button>
       </div>
+
+      <div className="bg-white mb-72 rounded-2xl  ">
+        <h1 className="text-2xl font-extrabold pt-8">Weekly</h1>
+        <p className="pb-4 pt-4">Access to a Dietitian for 1 week</p>
+        <hr className="h-px my-8  bg-slate-400 border-0 " />
+        <p className="font-extrabold text-3xl pb-4 font-poppins capitalize">
+          NGN 5,00 0{" "}
+        </p>
+        <span>per week</span> 
+        <p className="text-bold">What’s included</p>
+        {/* <p className="pb-7"> */}
+         <ul className="list-image-[url(src/assets/images/checkmark.png)] pl-10">
+         <li>3 virtual meetings or phone calls <br /></li>
+         <li>Unlimited access to a Dietitian via <br /></li>
+         <li>email Nutrition assessment, counselling <br /></li> and management{" "}
+         </ul>
+         {/* </p> */}
+
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white p-2">
+          Get Started
+        </button>
+      </div>
+
+
+       </div>
+      </section>
       
 
       
       
-      
-    </section>
+      </section>
+    
   );
 }
 

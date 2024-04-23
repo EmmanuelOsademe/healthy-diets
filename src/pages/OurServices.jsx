@@ -15,7 +15,7 @@ function Services() {
             alt="berriesicon"
           />
         </div>
-        <h2 className="text-5xl pt-14 pb-4">Our Blog</h2>
+        <h2 className="text-5xl pt-14 pb-4">Our Services</h2>
         <p className="pb-20">
           Your source for nutritional wisdom and inspiration. Explore articles
           curated just for you on healthy <br />
