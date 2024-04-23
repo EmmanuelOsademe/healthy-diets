@@ -57,7 +57,6 @@ const logout = async () => {
 
   try {
     const response = await axios.request(config);
-    console.log(response);
     return response.status;
   } catch (e) {
     throw new Error(e.response.data.message);
@@ -75,6 +74,47 @@ const createBlog = async (blogInput) => {
       Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
     },
     data: blogInput,
+  };
+
+  try {
+    const response = await axios.request(config);
+    return response.status;
+  } catch (e) {
+    throw new Error(e.response.data.message);
+  }
+};
+
+const fetchBlog = async (slug) => {
+  const url = `${baseUrl}/blogs/${slug}`;
+
+  const config = {
+    method: "GET",
+    url,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
+    },
+  };
+
+  try {
+    const response = await axios.request(config);
+    return response.data;
+  } catch (error) {
+    reportError(error);
+    return Promise.reject(error);
+  }
+};
+
+const sendMessage = async (messageInput) => {
+  const url = `${baseUrl}/messages/send`;
+  const config = {
+    method: "POST",
+    url,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
+    },
+    data: messageInput,
   };
 
   try {
@@ -106,7 +146,7 @@ const updateBlog = async (blogId, blogInput) => {
   }
 };
 
-const fetchBlogs = async () => {
+const fetchBlogs = async (query) => {
   const url = `${baseUrl}/blogs`;
 
   const config = {
@@ -116,15 +156,25 @@ const fetchBlogs = async () => {
       "Content-Type": "application/json",
       Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
     },
+    params: { ...query },
   };
 
   try {
     const response = await axios.request(config);
-    console.log(response);
-    return response;
+    return response.data;
   } catch (e) {
+    console.log(e);
     throw new Error(e.response.data.message);
   }
 };
 
-export { createAccount, login, logout, createBlog, updateBlog, fetchBlogs };
+export {
+  createAccount,
+  login,
+  logout,
+  createBlog,
+  updateBlog,
+  fetchBlogs,
+  sendMessage,
+  fetchBlog,
+};

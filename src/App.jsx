@@ -15,10 +15,10 @@ import HomePage from "./pages/Home";
 import PaymentPage from "./pages/Payment";
 
 import SingleBlogPage from "./pages/SingleBlog";
-
+import ContactPage from "./pages/ContactPage";
+import SingleBlogPage from "./pages/SingleBlog2";
 
 import Footer from "./components/Footer";
-
 
 const App = () => {
   return (
@@ -36,7 +36,8 @@ const App = () => {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/single-blog" element={<SingleBlogPage />} />
         <Route path="/payment" element={<PaymentPage />} />
-
+        <Route path="/single-blog/:slug" element={<SingleBlogPage />} />
+        <Route path="/contact-us" element={<ContactPage />} />
       </Routes>
       <Footer />
       <ToastContainer
