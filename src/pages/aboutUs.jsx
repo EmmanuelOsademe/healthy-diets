@@ -3,9 +3,9 @@
 import aboutbg from "../assets/images/Images/aboutbg.png";
 import aboutbg2 from "../assets/images/Images/aboutbg2.png";
 import dieticianimg from "../assets/images/Dietician-img.png";
-// import Qicon from "../assets/images/Images/Qicon1.png";
-// import Qicon2 from "./assets/images/Images/Qicon2.png";
-// import veggie from "../assets/images/Images/veggie-img.png";
+import Qicon from "../assets/images/Images/Qicon1.png";
+import Qicon2 from "../assets/images/Images/Qicon2.png";
+import veggie from "../assets/images/Images/veggies-img.png";
 
 const AboutusPage = () => {
   return (
@@ -34,33 +34,36 @@ const AboutusPage = () => {
               </p>
             </div>
 
-            <button className="bg-primaryOrange  w-52 rounded-2xl ">
+            <button className="bg-primaryOrange pt-2 pb-2 text-white w-52 rounded-2xl ">
               Our Services
             </button>
           </div>
         </div>
 
         <div>
-          <button className="pt-5 mt-9 border border-slate-400 mb-5 bg-slate-100 w-96 font-extrabold text-3xl">
+          <button className="pt-5 mt-9 pb-5 border border-slate-400  bg-slate-100 w-96 font-extrabold text-3xl">
             Know your <span className="text-primaryOrange">Dietician</span>
           </button>
 
-          <div className="border border-primaryGreen pb-16 m-20 rounded-3xl flex items-center">
-            <div className="flex-1">
-              {/* <img
+          <div className="border border-primaryGreen relative  pb-16 mt-20 m-20 rounded-3xl flex items-center">
+            <div className="flex-1  ">
+               <img
                src={veggie} 
-               className=" p-9" 
-               alt="" />  */}
+               className=" w-lvw h-lvh" 
+               alt="" />  
 
-              {/* <img src={Qicon} alt="quotesicon" className="w-132 pl-1" /> */}
-              <h4 className="bg-white pb-16 text-2xl pr-10 mr-20  pt-10">
-                I believe that every person is unique, and so is their
-                relationship with food. That&apos; why I offer personalised
+               <div className="absolute top-20">
+
+             <img src={Qicon} alt="quotesicon" className="pt-5" /> 
+              <h4 className="bg-white  text-2xl text-left pl-10 leading-[60px]">
+                I believe that every person is unique, and so <br /> is their
+                relationship with food. That&apos; why I <br /> offer personalised
                 nutrition plans{" "}
               </h4>
-              {/* <img src={Qicon2} alt="quotesicon" className="w-132 pl-1" /> */}
+              <img src={Qicon2} alt="quotesicon" className=" pl-96 top-96 " /> 
 
-              <p className="pt-5 ml-10  pr-20 border w-[600px] border-slate-400 text-lg">
+
+              <p className= "ml-5 pl-5 text-left pt-4 mt-7 pr-20 border w-[600px] border-slate-400 text-lg">
                 Pascaline Ukwueze is a registered dietician with over five years
                 of experience in the field of dietetics. She earned her B.Sc. in
                 nutrition and dietetics from the University of Nigeria, Nsukka,
@@ -69,6 +72,7 @@ const AboutusPage = () => {
                 living their best lives through nutrition education, support,
                 and encouragement.
               </p>
+              </div>
             </div>
 
             <div>

@@ -109,13 +109,12 @@ const Navbar = () => {
 export default Navbar;
 
 const navItems = [
-  { title: "Blogs", link: "/blogs", access: "user" },
+  { title: "About Us", link: "/about-us", access: "user" },
   { title: "Our Services", link: "/services", access: "user" },
-  { title: "Service", link: "/service", access: "user" },
-  { title: "About us", link: "/about-us", access: "user" },
-  { title: "Create blog", link: "/create-blog", access: "admin" },
-  { title: "Sign up", link: "/sign-up", access: "user" },
   { title: "Contact", link: "/contact-us", access: "user" },
+  { title: "Blogs", link: "/blogs", access: "user" },
+  { title: "Create Blog", link: "/create-blog", access: "admin" },
+  { title: "Sign Up", link: "/sign-up", access: "user" },
 ];
 
 const NavItem = ({ item, userData, index, handleClick, selected }) => {
