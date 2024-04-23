@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       listStyleImage: {
-        checkmark: 'url("/assets/image/checkmark.png")'
+        checkmark: 'url("../assets/image/checkmark.png")'
       },
 
 
