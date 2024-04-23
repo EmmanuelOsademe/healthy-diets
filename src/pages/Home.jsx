@@ -128,7 +128,7 @@ const HomePage = () => {
             A Registered Dietician <br /> you can trust{" "}
           </h3>
           <p className="text-xl">
-            Meet Pascaline, our experience dietician <br />
+            Meet Pascaline, our experienced dietician <br />
             with over five years of expertise in helping <br />
             people meet dietary goals. She offers <br />
             personalized nutrition plans, taking a holistic <br />
