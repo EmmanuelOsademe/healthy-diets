@@ -167,7 +167,8 @@ function SignUp() {
             <img src={googleicon} alt="" className=" px-2 pr-5" />
             <img src={fbicon} alt="" className=" px-2  pr-5" />
           </div>
-          <p>By logging in, you are indicating that you have read and agreed to the <span> Terms of use </span> and <span>  Privacy policy.</span></p>
+          <p>By logging in, you are indicating that you have read and agreed to the
+          <Link className="pt-5  text-blue-500  font-bold" to="/sign-up">Terms of use </Link>  and <Link className="pt-5 pr-64 text-blue-500  font-bold" to="/sign-up">Privacy Policy </Link></p>
         </div>
       </div>
     </div>
