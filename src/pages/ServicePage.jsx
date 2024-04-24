@@ -15,7 +15,7 @@ function ServicePage() {
          src={telephone}
           className=" pt-12" 
           alt="" />
-        <h1 className="mt-20 text-5xl capitalize font-bold placeholder-blue-100   font-poppins">
+        <h1 id="virtual_consultation" className="mt-20 text-5xl capitalize font-bold placeholder-blue-100   font-poppins">
           Virtual <br /> Consultation
         </h1>
         <p className="m-10 pt-7 text-left text-lg">
@@ -47,9 +47,11 @@ function ServicePage() {
          </ul>
          {/* </p> */}
 
+        <a href="/payment">
         <button className="bg-primaryOrange rounded-2xl text-bold text-white pl-7 pr-8 pt-3 pb-3">
           Get Started
         </button>
+        </a>
       </div>
 
       <div className="bg-white rounded-2xl ">
@@ -72,9 +74,11 @@ function ServicePage() {
           accountability
         </p>
 
+        <a href="/payment">
         <button className="bg-primaryOrange rounded-2xl text-bold text-white pl-7 pr-8 pt-3 pb-3 ">
           Get Started
         </button>
+        </a>
       </div>
 
       <div className="bg-white rounded-2xl  pt-9 ">
@@ -109,12 +113,11 @@ function ServicePage() {
           
           <li> Online classes that focus on nutrition for families </li>
 
-          
-          
-
-        <button className="bg-primaryOrange rounded-2xl text-bold text-white   pl-8 pr-8 pt-3 pb-3">
+       <a href="/payment">
+       <button className="bg-primaryOrange rounded-2xl text-bold text-white   pl-8 pr-8 pt-3 pb-3">
           Get Started
         </button>
+       </a>
         </div>
         </div>
        
