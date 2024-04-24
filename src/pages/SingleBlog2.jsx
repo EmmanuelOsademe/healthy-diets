@@ -20,6 +20,7 @@ const SingleBlogPage = () => {
   }, [slug]);
 
   if (!blog) return;
+  console.log(blog.description);
 
   return (
     <div>
@@ -63,10 +64,7 @@ const SingleBlogPage = () => {
       </div>
 
       <p className="text-left ml-4 mt-2 mb-8">By Mia Bankole</p>
-      <div
-        dangerouslySetInnerHTML={{ __html: blog.description }}
-        className={" text-[#4F547B]"}
-      />
+      <section dangerouslySetInnerHTML={{ __html: blog.description }} />
     </div>
   );
 };
