@@ -122,7 +122,7 @@ function ServicePage() {
         </div>
        
         
-        <h6 className="top-72">Close Plan</h6>
+        <h6 className="top-72">Chose Plan</h6>
 
         
 
@@ -170,9 +170,11 @@ function ServicePage() {
          </ul>
         
 
+        <a href="/menupayment">
         <button className="bg-primaryOrange rounded-2xl text-white text-bold  pl-7 pr-8 pt-3 pb-3">
           Get Started
         </button>
+        </a>
       </div>
 
       <div className="bg-white mb-72 rounded-2xl  ">
@@ -192,9 +194,11 @@ function ServicePage() {
          </ul>
          {/* </p> */}
 
+        <a href="/menupayment">
         <button className="bg-primaryOrange rounded-2xl text-bold text-white p-2">
           Get Started
         </button>
+        </a>
       </div>
 
 

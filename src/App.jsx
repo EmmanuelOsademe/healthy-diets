@@ -19,6 +19,7 @@ import ContactPage from "./pages/ContactPage";
 import SingleBlogPage from "./pages/SingleBlog2";
 
 import Footer from "./components/Footer";
+import MenuPaymentPage from "./pages/MenuPayment";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/single-blog/:slug" element={<SingleBlogPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/menupayment" element={<MenuPaymentPage />} />
       </Routes>
       <Footer />
       <ToastContainer
