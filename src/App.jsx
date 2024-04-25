@@ -13,8 +13,6 @@ import Navbar from "./components/Navbar";
 import CreateBlog from "./pages/CreateBlog";
 import HomePage from "./pages/Home";
 import PaymentPage from "./pages/Payment";
-
-import SingleBlogPage1 from "./pages/SingleBlog";
 import ContactPage from "./pages/ContactPage";
 import SingleBlogPage from "./pages/SingleBlog2";
 

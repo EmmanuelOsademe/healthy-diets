@@ -16,7 +16,7 @@ const TextEditor = ({ handleChange, value }) => {
         apiKey="h3r0yb4wltqwanftl730o5x9ybrxhz9mxuoeu5keq71mrcyx"
         onInit={(evt, editor) => (editorRef.current = editor)}
         initialValue={value}
-        onChange={() => handleChange(editorRef.current.getContent())}
+        onEditorChange={(content) => handleChange(content)}
         init={{
           height: 300,
           menubar: false,
