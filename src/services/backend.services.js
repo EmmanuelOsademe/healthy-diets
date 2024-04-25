@@ -168,6 +168,29 @@ const fetchBlogs = async (query) => {
   }
 };
 
+const makePayment = async (payload) => {
+  const url = `${baseUrl}/appointments/create`;
+  console.log(payload);
+
+  const config = {
+    method: "POST",
+    url,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${sessionStorage.getItem("accessToken")}`,
+    },
+    data: payload,
+  };
+
+  try {
+    const response = await axios.request(config);
+    return response.data;
+  } catch (e) {
+    console.log(e);
+    throw new Error(e.response);
+  }
+};
+
 export {
   createAccount,
   login,
@@ -177,4 +200,5 @@ export {
   fetchBlogs,
   sendMessage,
   fetchBlog,
+  makePayment,
 };
