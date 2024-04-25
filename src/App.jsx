@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/create-blog" element={<CreateBlog />} />
         <Route path="/blogs" element={<BlogPage />} />
-        <Route path="/single-blog" element={<SingleBlogPage1 />} />
+        {/* <Route path="/single-blog" element={<SingleBlogPage1 />} /> */}
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/single-blog/:slug" element={<SingleBlogPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
