@@ -32,9 +32,11 @@ const HomePage = () => {
             <br />
             help you meet your dietary <br /> goals and health needs.
           </p>
-          <button className="bg-primaryOrange text-white w-56 h-16 rounded-xl">
+         <a href="/services">
+         <button className="bg-primaryOrange text-white w-56 h-16 rounded-xl">
             Get Started
           </button>
+         </a>
         </div>
       </div>
 
@@ -115,9 +117,11 @@ const HomePage = () => {
             Take the first step to <br /> a healthier and happier you!
           </p>
 
+          <a href="/services">
           <button className="bg-primaryOrange text-white w-56 h-16 rounded-xl mr-12">
             Get Started
           </button>
+          </a>
         </div>
       </div>
 
@@ -128,7 +132,7 @@ const HomePage = () => {
             A Registered Dietician <br /> you can trust{" "}
           </h3>
           <p className="text-xl">
-            Meet Pascaline, our experienced dietician <br />
+            Meet Pascaline, our experience dietician <br />
             with over five years of expertise in helping <br />
             people meet dietary goals. She offers <br />
             personalized nutrition plans, taking a holistic <br />
@@ -171,9 +175,11 @@ const HomePage = () => {
             Start your journey <br /> to a longer, healthier life today!
           </p>
 
+          <a href="/services">
           <button className="bg-primaryOrange text-white w-56 h-16 rounded-xl mr-16">
             Get Started
           </button>
+          </a>
         </div>
       </div>
     </div>

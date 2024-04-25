@@ -34,7 +34,7 @@ function ServicePage() {
          src={telephone}
           className=" pt-12" 
           alt="" />
-        <h1 className="mt-20 text-5xl capitalize font-bold placeholder-blue-100   font-poppins">
+        <h1 id="virtual_consultation" className="mt-20 text-5xl capitalize font-bold placeholder-blue-100   font-poppins">
           Virtual <br /> Consultation
         </h1>
         <p className="m-10 pt-7 text-left text-lg">
@@ -70,9 +70,16 @@ function ServicePage() {
          </ul>
          {/* </p> */}
 
+
+        <a href="/payment">
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white pl-7 pr-8 pt-3 pb-3">
+          Get Started
+
         <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
       Select Plan
+
         </button>
+        </a>
       </div>
 
       <div className="bg-white rounded-2xl mb-32 ">
@@ -96,11 +103,16 @@ function ServicePage() {
           subscribers for support and <br />
           accountability </li>
 
+
+        <a href="/payment">
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white pl-7 pr-8 pt-3 pb-3 ">
+
           </ul>
         
         <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
           Get Started
         </button>
+        </a>
       </div>
 
       <div className="bg-white rounded-2xl  pt-9 ">
@@ -114,6 +126,10 @@ function ServicePage() {
         <p className="font-bold pr-32">What’s included</p>
 
         <ul className="list-image-[url(src/assets/images/checkmark.png)] text-left pl-14 pr-6 pt-2">
+
+
+       <a href="/payment">
+       <button className="bg-primaryOrange rounded-2xl text-bold text-white   pl-8 pr-8 pt-3 pb-3">
 
 
         <li>12 virtual meetings or phone calls <br /> every month</li>
@@ -131,13 +147,15 @@ function ServicePage() {
         </ul>
           
         <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
+
           Get Started
         </button>
+       </a>
         </div>
         </div>
        
         
-        <h6 className="top-72">Close Plan</h6>
+        <h6 className="top-72">Chose Plan</h6>
 
         
 
@@ -185,9 +203,16 @@ function ServicePage() {
          </ul>
         
 
+
+        <a href="/menupayment">
+        <button className="bg-primaryOrange rounded-2xl text-white text-bold  pl-7 pr-8 pt-3 pb-3">
+          Get Started
+
         <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
           Select Plan
+
         </button>
+        </a>
       </div>
 
       <div className="bg-white mb-72 rounded-2xl  ">
@@ -207,10 +232,19 @@ function ServicePage() {
          </ul>
          {/* </p> */}
 
+
+        <a href="/menupayment">
+        <button className="bg-primaryOrange rounded-2xl text-bold text-white p-2">
+          Get Started
+        </button>
+        </a>
+      </div>
+
         <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
         Select Plan
         </button>
         </div>
+
 
 
         </div>

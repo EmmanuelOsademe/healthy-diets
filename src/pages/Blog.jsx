@@ -244,8 +244,8 @@ const BlogPage = () => {
               </div>
             </div>
           </div>
-        </div> */}
-      </div>
+        </div> 
+      </div>*/}
 
       <div className="">
         <div className="flex justify-end">
