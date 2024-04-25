@@ -239,6 +239,7 @@ import "../index.css";
 import telephone from "../assets/images/Images/telephone-img.png";
 import cutlery from "../assets/images/Images/cutlery-img.png";
 import Berriesicon from "../assets/images/berriesicon.png";
+import { Link } from "react-router-dom";
 
 function ServicePage() {
   return (
@@ -303,9 +304,8 @@ function ServicePage() {
             and management{" "}
           </ul>
           {/* </p> */}
-
-          <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
-            Select Plan
+          <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-8 mb-6 pl-16 pr-16 pt-4 pb-4">
+            <Link to={"/payment"}>Select plan</Link>
           </button>
         </div>
 
