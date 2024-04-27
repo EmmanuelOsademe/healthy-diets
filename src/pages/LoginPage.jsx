@@ -80,17 +80,17 @@ function LoginPage() {
 
   return (
     <div className=" ">
-      <div className=" mt-20 md:mt-0 flex flex-row items-center justify-center  ">
-        <div>
-          <div className="pt-10">
-            <img src={Logo} alt="login icon" className="flex" />
+      <div className=" mt-20 md:mt-0 flex flex-col items-center justify-center  ">
+        <div className="flex flex-col items-center justify-center">
+          <div className="pt-10 ">
+            <img src={Logo} alt="login icon" className="" />
           </div>
-          <h2 className="hidden md:flex  text-2xl capitalize ml-5 mb-4 font-poppins font-extrabold">
+          <h2 className="hidden md:flex  text-2xl capitalize mt-4 ml-5 mb-2 font-poppins font-extrabold">
             Welcome Back
           </h2>
-          <div className="mt-10 ">
+          <div className="mt-2 items-center justify-center flex flex-col ">
             <form
-              className=" items-center justify-center flex-col"
+              className=" "
               onSubmit={handleSubmit}
             >
               <InputField
@@ -123,7 +123,7 @@ function LoginPage() {
             </form>
           </div>
 
-          <h4 className="text-start  text-lg  font-medium cursor-pointer mt-2 text-primary">
+          <h4 className="text-start  text-lg font-medium cursor-pointer mt-2 text-primary">
             Forgotten password?
           </h4>
           <p className=" text-center mt-3 text-slate-500 md:text-black text-lg  font-medium mb-2">
@@ -138,7 +138,7 @@ function LoginPage() {
             <img src={googleicon} alt="" className=" px-2 pr-5" />
             <img src={fbicon} alt="" className=" px-2  pr-5" />
           </div>
-          <p>By logging in, you are indicating that you have read and agreed to the
+          <p className="ml-40">By logging in, you are indicating that you have read and agreed to the
           <Link className="pt-5  text-blue-500  font-bold" to="/sign-up">Terms of use </Link>  and <Link className="pt-5 pr-64 text-blue-500  font-bold" to="/sign-up">Privacy Policy </Link></p>
         </div>
       </div>

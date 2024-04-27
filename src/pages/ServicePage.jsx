@@ -339,8 +339,8 @@ function ServicePage() {
             </li>
           </ul>
 
-          <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
-            Get Started
+          <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-8 mb-6 pl-16 pr-16 pt-4 pb-4">
+            <Link to={"/payment"}>Select plan</Link>
           </button>
         </div>
 
@@ -383,19 +383,19 @@ function ServicePage() {
             </li>
           </ul>
 
-          <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-7 mb-6 pl-16 pr-16 pt-4 pb-4">
-            Get Started
+          <button className="bg-primaryOrange rounded-2xl text-bold text-white mt-8 mb-6 pl-16 pr-16 pt-4 pb-4">
+            <Link to={"/payment"}>Select plan</Link>
           </button>
         </div>
       </div>
 
-      <h6 className="top-72">Close Plan</h6>
+      <h6 className="top-72">Chose Plan</h6>
 
       <section className="rounded-3xl ">
         <div className="bg-secondaryPink gap-16 flex flex-row justify-center pt-8 mt-10 ">
           <img src={cutlery} className="max-w-xs h-48 pt-10" alt="" />
 
-          <h1 className="mt-16 text-5xl capitalize font-extrabold  font-poppins ">
+          <h1 id="menu_plan" className="mt-16 text-5xl capitalize font-extrabold  font-poppins ">
             Curated <br />
             Menu Plan
           </h1>
