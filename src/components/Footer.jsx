@@ -2,7 +2,7 @@ import Logo from "../assets/images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="bg-secondaryPink relative z-10 mt-2">
+    <div className="bg-secondaryPink relative z-10">
       <div className="grid grid-cols-4 pt-12 pl-12 pr-8">
         <img src={Logo} className="w-sm col-span-2" alt="healthydiet_logo" />
 
