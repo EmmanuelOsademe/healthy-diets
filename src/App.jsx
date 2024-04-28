@@ -14,6 +14,8 @@ import CreateBlog from "./pages/CreateBlog";
 import HomePage from "./pages/Home";
 import PaymentPage from "./pages/Payment";
 import ContactPage from "./pages/ContactPage";
+import FormsPage from "./pages/FormsPage";
+import FormPage from "./pages/FormPage";
 import SingleBlogPage from "./pages/SingleBlog2";
 
 import Footer from "./components/Footer";
@@ -37,6 +39,8 @@ const App = () => {
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/single-blog/:slug" element={<SingleBlogPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/forms" element={<FormsPage />} />
+        <Route path="/form" element={<FormPage />} />
         <Route path="/menupayment" element={<MenuPaymentPage />} />
       </Routes>
       <Footer />
