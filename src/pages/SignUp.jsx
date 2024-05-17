@@ -83,18 +83,18 @@ function SignUp() {
 
   return (
     <div className=" ">
-      <div className=" mt-20 md:mt-0 flex flex-row items-center justify-center  ">
+      <div className=" mt-20 md:mt-0 ">
         <div>
-          <div className="pt-10">
-            <img src={Logo} alt="login icon" className="flex" />
+          <div className="pt-10 flex flex-col items-center justify-center ">
+            <img src={Logo} alt="login icon" className=" " />
           </div>
           <div className="mt-10 ">
             <form
-              className=" items-center justify-center flex-col w-full"
+              className=" items-center justify-center flex flex-col w-full"
               onSubmit={handleSubmit}
             >
               <div>
-                <h2 className="hidden md:flex  text-2xl capitalize ml-5 mb-4 font-poppins font-extrabold">
+                <h2 className="hidden md:flex  text-2xl capitalize  mb-4 font-poppins font-extrabold">
                   Create your Account
                 </h2>
 
@@ -156,7 +156,7 @@ function SignUp() {
           </div>
 
           <p className=" text-center mt-3 text-slate-500 md:text-black text-lg  font-medium mb-2">
-            Alrealdy have an account?{" "}
+            Already have an account?{" "}
             <span className="text-blue-500 cursor-pointer">
               <Link to={"/login"}>Log In</Link>
             </span>{" "}
@@ -167,17 +167,16 @@ function SignUp() {
             <img src={googleicon} alt="" className=" px-2 pr-5" />
             <img src={fbicon} alt="" className=" px-2  pr-5" />
           </div>
-          <p>
-            By logging in, you are indicating that you have read and agreed to
-            the
-            <Link className="pt-5  text-blue-500  font-bold" to="/sign-up">
-              Terms of use{" "}
-            </Link>{" "}
-            and{" "}
-            <Link className="pt-5 pr-64 text-blue-500  font-bold" to="/sign-up">
-              Privacy Policy{" "}
-            </Link>
-          </p>
+          <p className="ml-64">
+  By logging in, you are indicating that you have read and agreed to the{" "}
+  <a className="pt-5 text-blue-500 font-bold" href="/src/assets/PDFs/Terms.pdf" target="_blank" rel="noopener noreferrer">
+    Terms of use
+  </a>{" "}
+  and{" "}
+  <a className="pt-5 pr-64 text-blue-500 font-bold" href="/assets/PDFs/Privacy.pdf" target="_blank" rel="noopener noreferrer">
+    Privacy Policy
+  </a>
+</p>
         </div>
       </div>
     </div>

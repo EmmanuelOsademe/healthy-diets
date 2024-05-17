@@ -118,7 +118,7 @@ const HomePage = () => {
           </p>
 
           <a href="/services">
-          <button className="bg-primaryOrange text-white w-56 h-16 rounded-xl mr-12">
+          <button className="bg-primaryOrange text-white w-56 h-16 rounded-xl mr-24">
             Get Started
           </button>
           </a>
@@ -164,9 +164,9 @@ const HomePage = () => {
           <div className="bg-white rounded-xl">
             <img src={Quotes} alt="quotes icon" className="w-132 pl-1" />
             <h2 className="text-3xl pb-4">
-              My health is so much more <br /> improved!
+              Achieving my dietary goals couldn't <br /> be any easier
             </h2>
-            <p className="pb-8">Oluchi, Lagos</p>
+            <p className="pb-8">John, Abuja</p>
           </div>
         </div>
         <div className="flex justify-between text-left pt-20 pb-20">

@@ -17,12 +17,10 @@ function Services() {
         </div>
         <h2 className="text-5xl pt-14 pb-4">Our Services</h2>
         <p className="pb-20">
-          Your source for nutritional wisdom and inspiration. Explore articles
-          curated just for you on healthy <br />
-          eating, recipes and more. Join us on a journey towards better health
-          through balanced nutrition.
+          Your pathway to optimal health and well being. <br />
+          Discover virtual consultations and personalized menu plans
           <br />
-          Stay Informed, Stay Healthy.{" "}
+          tailored to your needs.{" "}
         </p>
       </div>
 
@@ -66,7 +64,8 @@ function Services() {
           health and wellness goals.
         
         </p>
-          <Link className="pt-5 pr-64  font-bold" to="/service">View Plan</Link> 
+        <a href="/service#menu_plan" className="pt-5 pr-64  font-bold" >View Plan</a>
+          {/* <Link className="pt-5 pr-64  font-bold" to="/service">View Plan</Link>  */}
         
           </div>
       </div>
