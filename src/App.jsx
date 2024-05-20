@@ -15,6 +15,7 @@ import HomePage from "./pages/Home";
 import PaymentPage from "./pages/Payment";
 import ContactPage from "./pages/ContactPage";
 import SingleBlogPage from "./pages/SingleBlog2";
+import AccountPage from "./pages/AccountPage";
 
 import Footer from "./components/Footer";
 import MenuPaymentPage from "./pages/MenuPayment";
@@ -33,8 +34,8 @@ const App = () => {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/create-blog" element={<CreateBlog />} />
         <Route path="/blogs" element={<BlogPage />} />
-        {/* <Route path="/single-blog" element={<SingleBlogPage1 />} /> */}
-        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/account-page" element={<AccountPage /> }  />
+        <Route path="/payment" element={<PaymentPage />}  />
         <Route path="/single-blog/:slug" element={<SingleBlogPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/menupayment" element={<MenuPaymentPage />} />
